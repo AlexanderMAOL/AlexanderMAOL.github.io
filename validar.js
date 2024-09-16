@@ -1,6 +1,6 @@
 function validar(form){
     let nombre =form.nombre.value.trim()
- if (nombre == ""){
+ if (nombre == "" || nombre = ["1","2","3","4","5"]){
     alert("Por favor, ingrese su nombre");
     return false
  }   
