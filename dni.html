@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Letra DNI</title>
+    <style>
+        body {
+        background-color:  black;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            
+            background-color: #c177f1;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 5px solid black     ;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            display: block;
+            width: 90%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            align-items: center;
+            width: 40%;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <h2>Cálculo de la letra del DNI</h2>
+        <form id="dniForm">
+            <label for="dni">Número de DNI (sin letra):</label>
+            <input type="number" id="dni" required>
+
+            <label for="letter">Letra del DNI:</label>
+            <input type="text" id="letter" maxlength="1" required>
+            <center>
+            <button type="submit">Verificar DNI</button>
+            <button type="reset">Reset</button>
+        </center>
+        </form>
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

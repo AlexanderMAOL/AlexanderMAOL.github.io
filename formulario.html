@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estylo.scc" type="text/scc" media="screen">
+    <style>
+            label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+ 
+.principal {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #666666;
+    font-family:Arial;
+}
+ 
+form {
+    margin:0 auto;
+    width:400px;
+}
+ 
+.cajas{
+    width:380px;
+    height:15px;
+    background:#666666;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:#ffffff;
+}
+select{
+    width:400px;
+    height:40px;
+    background:#666666;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:12px;
+    color:#ffffff;
+}
+textarea {
+    height:150px;
+}
+ 
+.boton{
+    width:85px;
+    height:40px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="principal ">
+        <form method="get" name="registro" onsubmit="return validar(this)" action="index.html">
+            <label for="">Nombre:</label>
+            <input class="cajas" type="text" name="Nombre" id="nombre">
+            <br><br>
+            <label for="">Edad:</label>
+            <input class="cajas" type="text" name="edad" id="edad">
+            <br><br>
+            <legend>Selecciona un sexo:</legend>
+            <blockquote>
+                <label for="">Femenino</label>
+                <input class="cajas" type="radio" name="sexo" value="femenino">
+                
+                <label for="">Masculino</label>
+                <input class="cajas" type="radio" name="sexo" value="masculino">
+            </blockquote>
+            <label for="">
+                <span>Deporte Favorito</span>
+                <select name="deporte" id="deporte">
+                    <option value="futbol">Futbol</option>
+                    <option value="basquetball">Basquetball</option>
+                    <option value="tenis">Tenis</option>
+                    <option value="beisbol">Beisbol</option>
+                    <option value="ninguno">Ninguno</option>
+
+                </select>
+            </label>
+            <input class="boton" type="submit" id="enviar" value="Enviar">
+            <input type="submit" class="boton" id="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
