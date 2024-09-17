@@ -23,4 +23,8 @@ document.getElementById('dniForm').addEventListener('submit', function(event) {
     } else {
        alert ("El número y la letra del DNI son correctos.")
     }
+    let dni =form.dni.value.trim()
+     if (nombre == ""){
+    alert("Por favor, un numero de DNI ");
+    return false
 });
