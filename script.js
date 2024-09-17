@@ -7,17 +7,21 @@ document.getElementById('dniForm').addEventListener('submit', function(event) {
     var userLetter = document.getElementById('letter').value.toUpperCase();
 
     var resultDiv = document.getElementById('result');
-
-    // Validar el número de DNI
+       
+    if (dni === "") {
+        alert("Por favor ingrese un número de DNI");
+        return;
+    }
+    
     if (dni < 0 || dni > 99999999) {
         alert("El número de DNI proporcionado no es válido.")
         return;
     }
 
-    // Calcular la letra correspondiente
+    
     var calculatedLetter = letras[dni % 23];
 
-    // Comparar con la letra indicada por el usuario
+    
     if (calculatedLetter !== userLetter) {
         alert ("La letra proporcionada no es correcta. La letra correcta es: " + calculatedLetter)
     } else {
