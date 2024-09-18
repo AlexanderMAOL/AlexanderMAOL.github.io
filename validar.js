@@ -1,6 +1,6 @@
 function validar(form){
     let nombre =form.nombre.value.trim()
- if (nombre == "" ){
+ if (nombre == ""){
     alert("Por favor, ingrese su nombre");
     return false
  }   
@@ -10,15 +10,14 @@ function validar(form){
     alert("Por favor, ingrese una edad valida")
     return false; 
  }
- let sexo= from.sexo.value
- if (sexo == "" ){
-    alert("Por favor, seleccione un sexo")
+let sexo = form.sexo.value;
+if (!form.sexo.value) {
+    alert("Por favor, seleccione un sexo");
     return false;
 }
-
- let deporte= form.deporte.vale
- if(deporte==="ninguno"){
-    alert("Por favor, seleccione un deporte")
+let deporte = form.deporte.value;
+if (deporte === "Ninguno") {
+    alert("Por favor, seleccione un deporte");
     return false;
- }
+}
 }
