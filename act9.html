@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <script src="act9.js" defer></script>
+    <link rel="stylesheet" href="btn.css">
+    <link rel="stylesheet" href="act9.css">
+</head>
+<body>
+    <table width="100%"></table>
+        <tr><td width="75%"></td><td><a href="actividades.html" class="btn">REGRESAR</a></td></tr>
+    </table>
+    <center><h2>Actividad 9</h2></center>
+    <center><div class="exp"><p>Construir un validador para un formulario de registro que, dado el HTML que se proporciona, valide cada uno de los campos cuando el usuario ha terminado de introducir datos en cada uno de ellos, es decir, al perder el foco. Si el campo no cumple las restricciones, se mostrará una alerta al usuario, pero se le permitirá seguir introduciendo datos en el resto de campos.
+    </p></div></center>
+    <center><div>
+    <h2>Registro</h2>
+    <form id="registerForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="comments">Comentarios (máx. 50 caracteres):</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="terms">
+            <input type="checkbox" id="terms" name="terms">
+            Acepto las condiciones del servicio
+        </label><br><br>
+
+        <button type="submit">Registrar</button>
+    </form>
+</div></center>
+</body>
+</html>

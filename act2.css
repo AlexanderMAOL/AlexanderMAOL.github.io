@@ -1,0 +1,23 @@
+
+body{
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+form{
+    width: 30%;
+    background-color: #800080; 
+    color: white;
+    margin: 15px;
+}
+span{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+}
+div{
+    width: 70%;
+}

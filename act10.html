@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar etiquetas</title>
+<link rel="stylesheet" href="btn.css">
+<link rel="stylesheet" href="act10.css">
+</head>
+<body>
+    <table width="100%">
+        <tr>
+            <td width="75%"></td>
+            <td><a href="actividades.html" class="btn">REGRESAR</a></td>
+        </tr>
+    </table>
+        
+        <center><h2>Actividad 10</h2></center>
+        <center><div class="exp"><p>Crear una expresión regular que elimine las etiquetas potencialmente peligrosas (script) y todo su contenido de una cadena HTML.</p></div></center>
+        
+    
+        <h1>Eliminar etiquetas y su contenido</h1>
+            <textarea id="inputHtml" placeholder="Escribe tu HTML aquí..."></textarea>
+            <button onclick="removeScriptTags()">Eliminar</button>
+            <h2>HTML limpio:</h2>
+            <textarea id="outputHtml" readonly></textarea>
+
+    <script src="act10.js">
+    </script>
+</body>
+</html>

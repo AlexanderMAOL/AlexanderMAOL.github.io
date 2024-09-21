@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palabras a Números</title>
+    <link rel="stylesheet" href="act6.css">
+    <link rel="stylesheet" href="btn.css">
+</head>
+<body>
+    <table width="100%">
+        <tr><td width="75%"></td><td><a href="actividades.html" class="btn">REGRESAR</a></td></tr>
+    </table>
+    <center><h2>Actividad 6</h2></center>
+    <center><div class="exp"><p>Escribir una función llamada palabrasANumeros que reciba un arreglo de strings y retorne un nuevo arreglo traduciendo cada palabra a su versión numérica (del 0 al 9). Si la palabra no es un número se traduce a -1.
+    </p></div></center>
+    <div id="formulario">
+        <h2>Convertir Palabras a Números</h2>
+        <label for="palabras">Ingresa palabras separadas por comas (ej: uno,dos,tres):</label><br><br>
+        <input type="text" id="palabras" placeholder="Ej: uno,dos,tres"><br>
+        <input type="button" value="Convertir" onclick="convertirPalabrasANumeros()"><br>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="act6.js"></script>
+
+</body>
+</html>

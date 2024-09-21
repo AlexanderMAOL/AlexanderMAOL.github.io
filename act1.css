@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+    
+    align-items: center;
+}
+form{
+    width: 30%;
+    background-color: #800080; 
+    
+    
+}
+span{
+    background-color: white;
+    color: black;
+}
+div{
+    width: 70%;
+}

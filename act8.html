@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 8</title>
+    <link rel="stylesheet" href="btn.css">
+    <link rel="stylesheet" href="act1.css">
+</head>
+<body>
+    <table width="100%"></table>
+    <tr><td width="75%"></td><td><a href="actividades.html" class="btn">REGRESAR</a></td></tr>
+</table>
+<center><h2>Actividad 8</h2></center>
+<center><div><p>Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si este se le asigna como un porcentaje de su salario mensual que depende de su antigüedad en la empresa </p></div></center>
+<center>   
+    <form id="form8" ><br><br>
+        <label for="">Ingrese su salario mensual</label><br><br>
+        <input type="text" id="salario" name="salario"><br><br>
+        <label for="">Años de antiguedad</label><br><br>
+        <select name="deporte" id="deporte">
+            <option value="ninguno">Ninguno</option>
+            <option value="uno">Menos de 1 año</option>
+            <option value="dos">1 año o más y menos de 2 años</option>
+            <option value="tres">2 años o más y menos de 5 años</option>
+            <option value="cuatro">5 años o más y menos de 10 años</option>
+            <option value="cinco">10 años o más</option>
+        </select><br><br>
+        <label for="">Utilidades</label><br><br>
+        <span id="total">0.00</span><br><br>
+        <button type="submit">Calcular</button>
+        <button type="reset">Borrar</button><br><br>
+    </form>
+</center>
+<script src="act8.js"></script>
+</body>
+</html>
